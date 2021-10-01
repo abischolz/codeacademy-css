@@ -1,17 +1,28 @@
 body {
+  margin-top: 100px;
   background-color: black;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  overflow: scroll;
 }
 
 header {
   position: fixed;
   border-bottom: 1px solid seashell;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-height: 69px;
+  box-sizing: border-box;
 }
 
 footer {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  margin: 10px;
 }
 
 footer .p {
@@ -20,10 +31,14 @@ footer .p {
 
 .logo {
   height: 50px;
+  flex-grow: 0;
+  margin-left: 10px;
 }
 
 .section-links {
   display: flex;
+  justify-content: space-around;
+  min-width: 500px;
 }
 
 .section-links p {
